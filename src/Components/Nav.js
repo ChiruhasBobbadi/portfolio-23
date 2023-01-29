@@ -25,8 +25,8 @@ const Nav = ()=>{
                 </Navbar.Content>
                 <Navbar.Content>
                     <Navbar.Item>
-                        <Button auto flat as={Link} href="/shell" color='gradient'>
-                            Enter Shell
+                        <Button auto flat as={Link} href="/" color='gradient'>
+                            Enter Shell (Coming Soon)
                             &nbsp;&nbsp;&nbsp;&nbsp;
 
                             <FaTerminal/>

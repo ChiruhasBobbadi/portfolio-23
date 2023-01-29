@@ -22,14 +22,14 @@ const data = {
         },
         {
             title: 'ThunderStorm Alert System',
-            description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae distinctio magni non nostrum placeat quasi quod reprehenderit sed sequi suscipit.',
+            description: ' Margin and Brokerage calculator is built with the goal of cutting down the time taken by trader\'s to calculate margins and Brokerage for various types of stocks and commodities.',
             techStack: ['bootstrap','javascript', 'nodejs', 'mongodb','android'],
             githubUrl: 'https://github.com/ChiruhasBobbadi/Thunder_Storm',
             current:false
         },
         {
             title: 'Margin & Brokerage Calculator',
-            description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae distinctio magni non nostrum placeat quasi quod reprehenderit sed sequi suscipit.',
+            description: 'This mobile application serves real-time margins of stocks and commodities of various trading platforms in India, this application also comes with a built in profit/Loss calculator too.',
             techStack: ['android','nodejs'],
             githubUrl: 'https://github.com/ChiruhasBobbadi/MarginAndBrokerageCalculatorForZerodha',
             current:false
