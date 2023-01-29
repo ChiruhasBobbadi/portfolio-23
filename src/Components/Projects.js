@@ -2,12 +2,15 @@ import {Grid, Text} from "@nextui-org/react";
 import {TypeAnimation} from "react-type-animation";
 
 //
-// import reactjs from '../icons/reactjs.svg'
-// import nodejs from '../icons/nodejs.svg'
-// import mongodb from '../icons/mongodb.svg'
-// import sqlite from '../icons/sqlite.svg'
-// import android from '../icons/android.svg'
-// import javascript from '../icons/javascript.svg'
+import reactjs from '../icons/reactjs.svg'
+import nodejs from '../icons/nodejs.svg'
+import mongodb from '../icons/mongodb.svg'
+import sqlite from '../icons/sqlite.svg'
+import android from '../icons/android.svg'
+import javascript from '../icons/javascript.svg'
+import bootstrap from '../icons/bootstrap.svg'
+import docker from '../icons/docker.svg'
+import spring from '../icons/spring.svg'
 
 
 import data from '../data/data';
@@ -60,15 +63,48 @@ const Projects = ()=>{
 
                     </Link>
 
-                    {/*todo*/}
 
-                    {/*{el.techStack.map(t => {*/}
-                    {/*    const images = require.context('../icons', true);*/}
 
-                    {/*    let imgsrc = images(`../icons/${t}.svg`);*/}
-                    {/*    console.log(imgsrc);*/}
-                    {/*    return <img src={imgsrc} style={{width:'30px',height:'30px'}}/>*/}
-                    {/*})}*/}
+                    {el.techStack.map(t => {
+
+                        let imageUrl='';
+
+                        switch(t){
+                            case 'reactjs':
+                                imageUrl = <img src={reactjs} style={{width:'30px',height:'30px',margin:'1%'}} title={'react.js'}/>
+                                break;
+                            case 'nodejs':
+                                imageUrl = <img src={nodejs} style={{width:'30px',height:'30px',margin:'1%'}} title={'node.js'}/>
+                                break;
+                            case 'android':
+                                imageUrl = <img src={android} style={{width:'30px',height:'30px',margin:'1%'}} title={'Android'}/>
+                                break;
+                            case 'sqlite':
+                                imageUrl = <img src={sqlite} style={{width:'50px',height:'30px',margin:'1%'}} title={'SQLite'}/>
+                                break;
+                            case 'mongodb':
+                                imageUrl = <img src={mongodb} style={{width:'50px',height:'30px',margin:'0.5%'}} title={'MongoDB'}/>
+                                break;
+                            case 'bootstrap':
+                                imageUrl = <img src={bootstrap} style={{width:'30px',height:'30px',margin:'1%'}} title={'Bootstrap'}/>
+                                break;
+                            case 'javascript':
+                                imageUrl = <img src={javascript} style={{width:'30px',height:'30px',margin:'1%'}} title={'Javascript'}/>
+                                break;
+                            case 'docker':
+                                imageUrl = <img src={docker} style={{width:'30px',height:'30px',margin:'1%'}} title={'Docker'}/>
+                                break;
+                            case 'spring':
+                                imageUrl = <img src={spring} style={{width:'30px',height:'30px',margin:'1%'}} title={'Spring'}/>
+                                break;
+
+
+
+                        }
+
+
+                        return imageUrl;
+                    })}
 
 
 

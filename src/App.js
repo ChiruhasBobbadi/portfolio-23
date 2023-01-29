@@ -8,6 +8,10 @@ import Nav from './Components/Nav'
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Education from "./Components/Education";
+import Tech from "./Components/Tech";
+import Publications from "./Components/Publications";
+import Connect from "./Components/Connect";
+import Terminal from "./Components/Terminal/Terminal"
 
 
 const theme = createTheme({
@@ -53,6 +57,12 @@ function App() {
               <Route path ='/' element={<About/>}></Route>
             <Route path ='/projects' element={<Projects/>}></Route>
             <Route path ='/education' element={<Education/>}></Route>
+            <Route path ='/tech' element={<Tech/>}></Route>
+            <Route path ='/publications' element={<Publications/>}></Route>
+            <Route path ='/connect' element={<Connect/>}></Route>
+
+            <Route path ='/shell' element={<Terminal/>}></Route>
+
 
 
           </Routes>

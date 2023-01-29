@@ -13,9 +13,7 @@ const Nav = ()=>{
             <Navbar isBordered variant="floating">
                 <Navbar.Brand>
 
-                    <Text b color="inherit" hideIn="xs">
-                        Hi!.
-                    </Text>
+
                 </Navbar.Brand>
                 <Navbar.Content hideIn="xs">
                     <Navbar.Link href="/">About</Navbar.Link>

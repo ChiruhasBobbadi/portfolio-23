@@ -1,9 +1,24 @@
-import {Grid, Text} from "@nextui-org/react";
+import {Grid, Link, Text} from "@nextui-org/react";
 import {TypeAnimation} from "react-type-animation";
 
+import data from '../data/data';
 
-const Education=()=>{
+const Education = () => {
 
+    const currently = data.education.filter(element => {
+
+        if (element.currentlyPursuing)
+            return element;
+    });
+
+    const notCurrently = data.education.filter(element => {
+
+        if (!element.currentlyPursuing)
+            return element;
+    });
+
+    console.log(currently);
+    console.log(notCurrently);
 
 
     return (
@@ -37,37 +52,164 @@ const Education=()=>{
             </Grid>
 
 
+            {currently.map((element, index) => {
 
 
+                return <>
+
+                    {index === 0 ?
+                        < >
+                            <Grid xs={3}>
+
+                            </Grid>
+
+                            <Grid xs={9}>
+                                <Text h2>Currently</Text>
+
+                            </Grid>
+                        </> : ""
+
+                    }
+
+                    <Grid xs={3}>
+
+                    </Grid>
+
+                    <Grid xs={9}>
+                        <Text h3 weight="bold">{element.degree} @ <Link href={element.collegeLink} isExternal>
+                            <Text h3 weight="bold" css={{
+                                textGradient: "45deg, $yellow600 -20%, $red600 100%",
+                            }}>
+                                {element.college}
+                            </Text>
 
 
-            <Grid xs={3}>
+                        </Link></Text>
 
-            </Grid>
-            <Grid xs={6}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, obcaecati, vitae. Ab alias, aliquid asperiores dolore doloremque doloribus, error eveniet facere illum itaque laboriosam libero officia quasi repudiandae saepe sequi tempora tenetur voluptas. Assumenda dicta, fugiat ipsum nobis quia quo unde. Aliquam asperiores, consectetur enim esse molestiae tempora temporibus veniam.
-            </Grid>
-            <Grid xs={3}>
+                    </Grid>
 
-            </Grid>
+                    <Grid xs={3}>
+
+                    </Grid>
+
+                    <Grid xs={6}>
+                        <Text>{element.description}</Text>
+
+                    </Grid>
+
+                    <Grid xs={3}>
+
+                    </Grid>
+
+                    <Grid xs={3}>
+
+                    </Grid>
+
+                    <Grid xs={6}>
+                        <Text weight='bold'>Course Work: {element.coursework.map((course, index) => {
+                            if (index === element.coursework.length-1)
+                                return course;
+                            else
+                                return course + " | "
+                        })}
+
+                        </Text>
 
 
-            <Grid xs={3}>
+                    </Grid>
 
-            </Grid>
-            <Grid xs={6}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, obcaecati, vitae. Ab alias, aliquid asperiores dolore doloremque doloribus, error eveniet facere illum itaque laboriosam libero officia quasi repudiandae saepe sequi tempora tenetur voluptas. Assumenda dicta, fugiat ipsum nobis quia quo unde. Aliquam asperiores, consectetur enim esse molestiae tempora temporibus veniam.
-            </Grid>
-            <Grid xs={3}>
+                    <Grid xs={3}>
 
-            </Grid>
+                    </Grid>
 
 
+                </>
 
 
+            })
 
 
+            }
 
+
+            {notCurrently.map((element, index) => {
+
+
+                return <>
+
+                    {index === 0 && currently.length > 0 ?
+                        <>
+                            <Grid xs={3}>
+
+                            </Grid>
+
+                            <Grid xs={9}>
+                                <Text h2>Past</Text>
+
+                            </Grid>
+                        </> : ""
+
+                    }
+
+                    <Grid xs={3}>
+
+                    </Grid>
+
+                    <Grid xs={9}>
+                        <Text h3 weight="bold">{element.degree} @ <Link href={element.collegeLink} isExternal>
+                            <Text h3 weight="bold" css={{
+                                textGradient: "45deg, $yellow600 -20%, $red600 100%",
+                            }}>
+                                {element.college}
+                            </Text>
+
+
+                        </Link></Text>
+
+                    </Grid>
+
+                    <Grid xs={3}>
+
+                    </Grid>
+
+                    <Grid xs={6}>
+                        <Text>{element.description}</Text>
+
+                    </Grid>
+
+                    <Grid xs={3}>
+
+                    </Grid>
+
+                    <Grid xs={3}>
+
+                    </Grid>
+
+                    <Grid xs={6}>
+                        <Text weight='bold'>Course Work: {element.coursework.map((course, index) => {
+                            if (index === element.coursework.length-1)
+                                return course;
+                            else
+                                return course + "  |  "
+                        })}
+
+                        </Text>
+
+
+                    </Grid>
+
+                    <Grid xs={3}>
+
+                    </Grid>
+
+
+                </>
+
+
+            })
+
+
+            }
 
 
         </Grid.Container>
@@ -77,7 +219,6 @@ const Education=()=>{
 
 
 }
-
 
 
 export default Education;
