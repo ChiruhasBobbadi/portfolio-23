@@ -1,22 +1,20 @@
-import {Container, Grid, Link, Text} from "@nextui-org/react";
+import {Grid, Text} from "@nextui-org/react";
 import {TypeAnimation} from "react-type-animation";
 import data from "../data/data";
-import reactjs from "../icons/reactjs.svg";
-import nodejs from "../icons/nodejs.svg";
-import android from "../icons/android.svg";
-import sqlite from "../icons/sqlite.svg";
-import mongodb from "../icons/mongodb.svg";
+import FadeIn from "react-fade-in";
 
 
 const Tech = () => {
 
 
     return <Grid.Container gap={2} justify="center">
-        <Grid xs={3}>
+
+
+        <Grid xs={1} md={4}>
 
         </Grid>
 
-        <Grid xs={9}>
+        <Grid xs={10} md={4}>
             <Text h1 css={{
                 textGradient: "45deg, $blue600 -20%, $pink600 50%",
             }} weight="bold">
@@ -33,47 +31,50 @@ const Tech = () => {
                 />
             </Text>
         </Grid>
+        <Grid xs={1} md={4}>
+
+        </Grid>
 
 
-        {data.skills.map(el => {
+        <FadeIn delay={1500} transitionDuration={1000}>
+            {data.skills.map((el, index) => <Grid.Container gap={1} justify="center">
+                       <Grid xs={1} md={3}>
 
-            return <>
+                       </Grid>
+                       <Grid xs={10} md={6}>
+                           <Text h2>{el.name}</Text>
 
-                <Grid xs={3}>
+                       </Grid>
+                       <Grid xs={1} md={3}>
 
-                </Grid>
-                <Grid xs={6}>
-                    <Text h2> {el.name}</Text>
-
-                </Grid>
-                <Grid xs={3}>
-
-                </Grid>
+                       </Grid>
 
 
-                <Grid xs={3}>
 
-                </Grid>
-                <Grid xs={6}>
-                    <Text h4 eight='bold'>
+                       <Grid xs={1} md={3}>
 
-                            {el.skills.map((skill,i)=>{
-                                if(i===el.skills.length-1)
-                                    return skill;
-                                return skill+" | "
-                            })}
+                       </Grid>
+                       <Grid xs={10} md={9}>
+                           <Text h4 eight='bold'>
 
-                    </Text>
+                               {el.skills.map((skill, i) => {
+                                   if (i === el.skills.length - 1)
+                                       return skill;
+                                   return skill + " | "
+                               })}
 
-                </Grid>
-                <Grid xs={3}>
+                           </Text>
 
-                </Grid>
+                       </Grid>
+                       <Grid xs={1} md={3}>
 
-            </>
-        })}
+                       </Grid>
+
+                   </Grid.Container>
 
 
+            )}
+        </FadeIn>
 
 
     </Grid.Container>;

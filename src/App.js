@@ -3,7 +3,7 @@ import './App.css';
 import { NextUIProvider } from '@nextui-org/react';
 import { Button } from '@nextui-org/react';
 import {createTheme} from '@nextui-org/react';
-import { Route, Routes,BrowserRouter as Router } from "react-router-dom";
+import {Route, Routes, BrowserRouter} from "react-router-dom";
 import Nav from './Components/Nav'
 import About from "./Components/About";
 import Projects from "./Components/Projects";
@@ -11,7 +11,9 @@ import Education from "./Components/Education";
 import Tech from "./Components/Tech";
 import Publications from "./Components/Publications";
 import Connect from "./Components/Connect";
+import Resume from "./Components/Resume";
 import Terminal from "./Components/Terminal/Terminal"
+import Error from "./Components/Error";
 
 
 const theme = createTheme({
@@ -50,23 +52,25 @@ function App() {
 
       <NextUIProvider theme={theme}>
 
+
+
+        <BrowserRouter>
           <Nav/>
-
-        <Router>
           <Routes>
-              <Route path ='/' element={<About/>}></Route>
-            <Route path ='/projects' element={<Projects/>}></Route>
-            <Route path ='/education' element={<Education/>}></Route>
-            <Route path ='/tech' element={<Tech/>}></Route>
-            <Route path ='/publications' element={<Publications/>}></Route>
-            <Route path ='/connect' element={<Connect/>}></Route>
-
-            <Route path ='/shell' element={<Terminal/>}></Route>
+              <Route path ='/' element={<About/>} />
+            <Route path ='/projects' element={<Projects/>} />
+            <Route path ='/education' element={<Education/>} />
+            <Route path ='/tech' element={<Tech/>} />
+            <Route path ='/publications' element={<Publications/>} />
+            <Route path ='/connect' element={<Connect/>} />
+            <Route path ='/shell' element={<Terminal/>} />
+            <Route path='/resume' element={<Resume/>} />
+            <Route path="*" element={<Error/>} />
 
 
 
           </Routes>
-        </Router>
+        </BrowserRouter>
 
 
 

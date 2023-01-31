@@ -1,6 +1,7 @@
 import {Grid, Link, Text} from "@nextui-org/react";
 import {TypeAnimation} from "react-type-animation";
 import data from "../data/data";
+import FadeIn from "react-fade-in";
 
 
 const Connect = () => {
@@ -8,10 +9,10 @@ const Connect = () => {
 
     return <Grid.Container gap={2} justify="center">
 
-        <Grid xs={3}>
+        <Grid xs={1} md={3}>
 
         </Grid>
-        <Grid xs={6}>
+        <Grid xs={11} md={6}>
 
             <Text h1 css={{
                 textGradient: "45deg, $yellow600 -20%, $red600 100%",
@@ -31,33 +32,35 @@ const Connect = () => {
                 />
             </Text>
         </Grid>
-        <Grid xs={3}>
+        <Grid xs={0} md={3}>
 
         </Grid>
 
 
-        {
-            data.connect.map(element => {
-                let link = element.link;
-                let mailto=`mailto:`+link;
+            {
+                data.connect.map(element => {
+                    let link = element.link;
+                    let mailto=`mailto:`+link;
 
 
-                return <>
-                    <Grid xs={3}>
+                    return <Grid.Container gap={1} justify="center">
+                        <Grid md={3} xs={1}>
 
-                    </Grid>
-                    <Grid xs={6}>
-                        {element.name === 'E-mail' ? <Link href={mailto} isExternal><Text h2>E-mail </Text></Link> :
-                            <Link href={element.link} isExternal><Text h2>{element.name}</Text></Link>}
-                    </Grid>
-                    <Grid xs={3}>
+                        </Grid>
+                        <Grid md={6} xs={10}>
+                            {element.name === 'E-mail' ? <Link href={mailto} isExternal><Text h2>E-mail </Text></Link> :
+                                <Link href={element.link} isExternal><Text h2>{element.name}</Text></Link>}
+                        </Grid>
+                        <Grid md={3} xs={1}>
 
-                    </Grid>
-                </>
+                        </Grid>
+                    </Grid.Container>
 
 
-            })
-        }
+                })
+            }
+
+
 
 
     </Grid.Container>

@@ -15,38 +15,38 @@ const data = {
     projects: [
         {
             title: 'IoT Dashboard.',
-            description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae distinctio magni non nostrum placeat quasi quod reprehenderit sed sequi suscipit.',
+            description: ['This application can be used by users to monitor all of their IoT devices in one place. Worked in collaboration with 4 members and created a dashboard that provides users with 4 features like the ability to manage devices, control & configure,monitor & tracking and billing.', 'Worked hands on with AWS IoT simulator to simulate diverse IoT clients.'],
             techStack: ['reactjs', 'nodejs', 'mongodb'],
             githubUrl: 'https://github.com/ChiruhasBobbadi/dashboard-react',
-            current:false
+            current: false
         },
         {
             title: 'ThunderStorm Alert System',
-            description: ' Margin and Brokerage calculator is built with the goal of cutting down the time taken by trader\'s to calculate margins and Brokerage for various types of stocks and commodities.',
-            techStack: ['bootstrap','javascript', 'nodejs', 'mongodb','android'],
+            description: [' This application works like a radar constantly scanning the area in which you are present is a thunderstorm zon, it does this even when the application is not actively running in the foreground.', 'Established a TCP connection to a 3 rd party server to listen to thunderstorm data. Harnessed the power of NOSQL geospatial operations.'],
+            techStack: ['bootstrap', 'javascript', 'nodejs', 'mongodb', 'android'],
             githubUrl: 'https://github.com/ChiruhasBobbadi/Thunder_Storm',
-            current:false
+            current: false
         },
         {
             title: 'Margin & Brokerage Calculator',
-            description: 'This mobile application serves real-time margins of stocks and commodities of various trading platforms in India, this application also comes with a built in profit/Loss calculator too.',
-            techStack: ['android','nodejs'],
+            description: ['This mobile application serves real-time margins of stocks and commodities of various trading platforms of India, this application also comes with a built in profit/Loss calculator.', 'Utilized a discrete set of techniques ranging from API calls to web scraping to fetch data and serve it to the client application.'],
+            techStack: ['android', 'nodejs'],
             githubUrl: 'https://github.com/ChiruhasBobbadi/MarginAndBrokerageCalculatorForZerodha',
-            current:false
+            current: false
         },
         {
             title: 'Bhaktivedanta Library',
-            description:'E-reader android application comes pre-loaded with 24 religious books, and contains a sleuth of feautres that an E-reader application would have',
-            techStack: ['android','sqlite'],
+            description: ['A comprehensive E-reader android application which comes pre-loaded with 24 religious books, and contains a sleuth of feautres that an E-reader application would have', 'Supports various functions like searching, bookmarking, tagging, and also has a native dark mode support.'],
+            techStack: ['android', 'sqlite'],
             githubUrl: 'https://github.com/ChiruhasBobbadi/Bhaktivedanta-Library',
-            current:false
+            current: false
         },
         {
             title: 'Stock Watch List',
-            description: 'This is a react-native application where users can search s&p500 stocks, add them to watchlist and see open,high,low,close price, percent increase or decrease along with volumes',
+            description: ['This is a react-native application where users can search s&p500 stocks, add them to watchlist and see open,high,low,close price, percent increase or decrease along with volumes'],
             techStack: ['reactjs'],
             githubUrl: 'https://github.com/ChiruhasBobbadi/stockWatchlist',
-            current:false
+            current: false
         },
 
     ],
@@ -58,14 +58,14 @@ const data = {
             timeline: "Aug 2022-",
             currentlyPursuing: true,
             collegeLink: 'https://www.sjsu.edu/',
-            description: " This degree goes beyond programming to include engineering methodologies and hands-on project experience. This program prepared me to become a qualified engineer for the Silicon Valley and International engineering market by providing me with state-of-the-art engineering methods, emergent technologies, teamwork experience, and solutions. " +
+            description: " This degree goes beyond programming to include engineering methodologies and hands-on project experience which prepared me to become a qualified engineer for the Silicon Valley and International engineering market by providing me with state-of-the-art engineering methods, emergent technologies, teamwork experience, and solutions. " +
                 "This program also helped me address design, coding, validation, and measurement issues for constructing large-scale computer systems and software applications in the real world.",
             coursework: [
-                "Data Structures and Algorithms",
-                "Object Oriented Design",
-                "Database Management Systems",
-                "Server Side Programming",
-                "Software Engineering Methodologies",
+                "Enterprise software platforms",
+                "Software systems engineering",
+                "Enterprise Application Development",
+                "Cloud Computing",
+                "Enterprise Distributed Systems",
             ]
         },
         {
@@ -74,13 +74,17 @@ const data = {
             timeline: "Aug 2017 - Aug 2021",
             currentlyPursuing: false,
             collegeLink: 'https://www.vrsiddhartha.ac.in/',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque cupiditate deserunt eaque error facilis fugiat minima mollitia nam neque nesciunt nisi nostrum numquam odio, quos rem, sequi tenetur, veritatis.',
+            description: '',
             coursework: [
                 "Data Structures and Algorithms",
                 "Object Oriented Design",
                 "Database Management Systems",
+                "Operating Systems",
+                "Networking",
                 "Server Side Programming",
                 "Software Engineering Methodologies",
+                "Mobile Application Development"
+
             ]
         }
 
@@ -88,7 +92,7 @@ const data = {
     skills: [
         {
             name: 'Programming Languages',
-            skills: ['Java ❤️', 'JavaScript', 'Python', 'C/C++']
+            skills: ['Java ❤️', 'JavaScript', 'Python','php', 'C/C++']
         },
         {
             name: 'Front End',
@@ -98,15 +102,25 @@ const data = {
             name: 'Back End',
             skills: ['Node.js', 'Django', 'Spring (learning)']
         },
-        {name: 'Databases', skills: ['MongoDB', 'MySQL', 'DynamoDB', 'Firebase']}
+        {name: 'Databases', skills: ['MongoDB', 'MySQL', 'DynamoDB', 'Firebase']},
+        {
+            name:'Others',
+            skills:['Version Control (Git)','Docker','REST (API design & principles)','GraphQL']
+        }
 
     ],
     publications: [
         {
-            title: 'temp',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at excepturi vel. Aliquam doloremque impedit ipsam minus non quam quas.',
-            publishedYear: '',
-            link: ''
+            title: 'HsvGvas: HSV Color Model to Recognize Greenness of Forest Land for the Estimation of Change in the Vegetation Areas',
+            description: 'In the last two decades there have been a widespread ascent in ecological difficulties being looked at by urban areas and nations internationally. In India, challenges identified with air contamination, squander the executives, shortage of water, protection of standard assets, and loss of biodiversity have been expanding. To oblige our expanding population, immense zones that once had tree cover have been deforested. In recent years, unnatural weather changes and forest fires have essentially influenced woodland cover in different pieces of the world. It is getting extremely hard to appropriately survey the harm to the vegetation, even with satellite imagery. An answer for this issue lies in distinguishing the measure of vegetation of a district utilizing satellite images which are then used to ascertain the green space of the land. This measurement can then measure up to the past green space of the area to survey the harm. The system being proposed takes satellite images of a region. Using computer vision, it calculates the percentage of vegetation or forest cover on land using color recognition in HSV color space. The proposed approach measures the green area by creating a mask of the satellite image using the lower and upper bounds of the HSV color space of the green color. Then, the procedure is followed by applying a morphological transformation of dilation on the image followed by bitwise AND operation between the original image and the mask to specifically detect only the green and shades of green and discard other colors. Using this system, changes in the vegetation area over a period can be estimated.\n' +
+                '\n',
+            publishedYear: '2022',
+            link: 'https://link.springer.com/chapter/10.1007/978-981-16-8225-4_21'
+        },{
+            title: 'Geospatial Based Thunder Storm Alert System',
+            description: 'In recent years, natural calamities and disasters have increased day by day and people have suffered the consequences of them, one of the primary reasons being the unavailability of proper information which can be reached to people. GoogleMaps is growing rapidly due to the rise in devices that can take advantage of geospatial information, namely GPS enabled devices. The universality of handheld computing devices has been found to be especially efficient and effective in conducting disaster management and relief operations, so an application is in need which can alert users when there is a natural calamity in their vicinity so the users of that application can take appropriate measures to save themselves and reduce the dependence on search and rescue teams during a calamity because their expertise can be used elsewhere, such an application eliminates the need for rescue because the users are provided with alerts if they are in a calamity zone, so users can be aware of the danger they are in and take necessary measures. The natural calamity focused here is thunderstorms and lightning. The use of Smart phones has skyrocketed among people and developing an application that stays in the very mobile they use daily and also serves alerts people is a total lifesaver for many people, Andhra Pradesh State Disaster Management Authority (APSDMA) wants to provide this service over a Smart phone application. If the user is in a possible area of thunder strikes, this application can alert the user. This app provides alerts based upon the data provided by APSDMA.',
+            publishedYear: '2020',
+            link: 'http://sersc.org/journals/index.php/IJGDC/article/view/30791'
         }
     ],
     connect: [

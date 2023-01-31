@@ -1,19 +1,18 @@
-import { Grid } from '@nextui-org/react';
-
-import { Text } from "@nextui-org/react";
+import {Grid, Text} from '@nextui-org/react';
 import {TypeAnimation} from "react-type-animation";
 
+import FadeIn from 'react-fade-in';
 
 const About = () => {
 
 
     return (
-        <Grid.Container gap={2} justify="center">
+        <Grid.Container gap={2} justify='center'>
 
-            <Grid xs={3}>
+            <Grid md={3} xs={1}>
 
             </Grid>
-            <Grid xs={6}>
+            <Grid md={6} xs={10}>
 
                 <Text h1 css={{
                     textGradient: "45deg, $yellow600 -20%, $red600 100%",
@@ -23,58 +22,37 @@ const About = () => {
                         // Same String at the start will only be typed once, initially
                         sequence={[
                             'Hey there, I\'m Chiruhas.',
-                            1000,
-                            'Hey there, I\'m a Full Stack Developer',
-                            1000,
-                            'Hey there, I\'m an Android Developer',
-                            1000,
-                            'Hey there, I\'m Chiruhas.',
-                            1000,
+                            2000,
 
 
                         ]}
-                        speed={50} // Custom Speed from 1-99 - Default Speed: 40
+                        speed={40} // Custom Speed from 1-99 - Default Speed: 40
                         wrapper="span" // Animation will be rendered as a <span>
-                         // Repeat this Animation Sequence infinitely
+                        // Repeat this Animation Sequence infinitely
                     />
                 </Text>
             </Grid>
-            <Grid xs={3}>
+            <Grid md={3} xs={1}>
+
 
             </Grid>
 
 
-
-
-
-
-            <Grid xs={3}>
+            <Grid xs={1} md={3}>
 
             </Grid>
-            <Grid xs={6}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, obcaecati, vitae. Ab alias, aliquid asperiores dolore doloremque doloribus, error eveniet facere illum itaque laboriosam libero officia quasi repudiandae saepe sequi tempora tenetur voluptas. Assumenda dicta, fugiat ipsum nobis quia quo unde. Aliquam asperiores, consectetur enim esse molestiae tempora temporibus veniam.
-            </Grid>
-            <Grid xs={3}>
+            <Grid xs={10} md={6}>
+
+                <FadeIn delay={1800} transitionDuration={1000}>
+                    <Text>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem corporis culpa,
+                        dignissimos distinctio earum est excepturi id illo incidunt ipsa maxime nesciunt nobis obcaecati
+                        optio, perspiciatis possimus quibusdam quisquam reprehenderit similique ut veniam voluptate.
+                    </Text>
+                </FadeIn>
 
             </Grid>
-
-
-            <Grid xs={3}>
-
-            </Grid>
-            <Grid xs={6}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, obcaecati, vitae. Ab alias, aliquid asperiores dolore doloremque doloribus, error eveniet facere illum itaque laboriosam libero officia quasi repudiandae saepe sequi tempora tenetur voluptas. Assumenda dicta, fugiat ipsum nobis quia quo unde. Aliquam asperiores, consectetur enim esse molestiae tempora temporibus veniam.
-            </Grid>
-            <Grid xs={3}>
-
-            </Grid>
-
-
-
-
-
-
-
+            <Grid xs={1} md={3}> </Grid>
 
 
         </Grid.Container>
