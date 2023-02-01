@@ -6,11 +6,25 @@ const data = {
     linkedinUrl: "https://www.linkedin.com/in/chiruhas-bobbadi/",
     githubUrl: "https://github.com/ChiruhasBobbadi",
 
-    about: [
-        ` Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis deserunt officia! Animi cupiditate laborum nam nulla quibusdam reprehenderit tenetur!`,
-        `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem ducimus enim fugit, obcaecati soluta. Dolore et quam sapiente voluptate!`,
+    about:   `Hello, and welcome, I am chiruhas 23, living in San José  California, I am a graduate student at San José State University, majoring in software engineering with a concentrated specialization in Enterprise Software Technologies. I am actively looking for a Software Development Internship.\n
 
-    ],
+More than a developer, I am a problem solver, I identify problems around me and try to come up with a solution with the tools I have at my disposal, this includes all the programming languages and various frameworks that are built on top of it.\n
+
+Even before I started programming, I was curious about how various systems were developed and the way they interact with each other to give a final output that is so robust. So, naturally, learning about them has been a huge motivating factor for me. Moreover, every new technology I learned so far now feels like pieces of a huge puzzle, though the pieces I have are comparatively small but I have an overall understanding of what the entire puzzle is, and that itself adds a whole sense of direction for a career like that of a developer.\n
+
+If there's one thing I strive for, that is being an irreplaceable asset for the company I work for, building up that level of skill is what keeps me up at night and drives me on the days when I feel like procrastinating. Currently, I am practicing and re-learning Data Structures & Algorithms and preparing for interviews for the role of an SDE intern.\n
+
+Apart from programming, I am also interested in Finance, I regularly read about it, and explore various investment opportunities, I also invest my money across various segments, to grow my money alongside me. Consequently I am always on the lookout for various streams of passive income for which I spend some time researching about them.\n
+
+I use this website as a platform to showcase my skills and projects many of my projects are open source if you find any project interesting or want to collaborate on a project, I am open and you can connect me via any options listed on this site.\n
+
+When I'm not working or studying I love cooking food ❤️, going out on long drives, exercising, or playing on my Xbox, all of them help me to recalibrate myself. These are some of the most frequent things I do daily, and I do stick to a schedule so that I don't waste my time thinking about what to do. \n
+
+P.S.  I could tell you a joke about UDP but I don't know if you would get it.\n
+`
+
+
+    ,
 
     projects: [
         {
@@ -74,7 +88,7 @@ const data = {
             timeline: "Aug 2017 - Aug 2021",
             currentlyPursuing: false,
             collegeLink: 'https://www.vrsiddhartha.ac.in/',
-            description: '',
+            description: ' The bachelor\'s degree was filled with lots of theoretical learning of core subjects related to computer science coupled with hands-on lab work which provided me the opportunity to tweak, break and write code, the curriculum goes above and beyond including new and emerging technologies, that allowed me to learn things that matter. ',
             coursework: [
                 "Data Structures and Algorithms",
                 "Object Oriented Design",

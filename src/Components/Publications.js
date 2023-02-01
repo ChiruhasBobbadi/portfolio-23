@@ -22,7 +22,7 @@ const Publications = () => {
                     // Same String at the start will only be typed once, initially
                     sequence={[
                         'My Publications.',
-                        2000,
+                        1000,
                         'My Published Literature.',
                         2000
 
@@ -36,7 +36,7 @@ const Publications = () => {
         </Grid>
         <Grid xs={1} md={3}></Grid>
 
-        <FadeIn delay={1500} transitionDuration={1000}>
+        <FadeIn delay={3200} transitionDuration={1000}>
             {data.publications.map((el, index) => {
                 return <Grid.Container gap={1} justify="center">
                     <Grid xs={1} md={3}>

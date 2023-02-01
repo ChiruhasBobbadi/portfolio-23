@@ -1,6 +1,8 @@
 import {Grid, Text} from '@nextui-org/react';
 import {TypeAnimation} from "react-type-animation";
 
+import data from '../data/data'
+
 import FadeIn from 'react-fade-in';
 
 const About = () => {
@@ -38,21 +40,28 @@ const About = () => {
             </Grid>
 
 
-            <Grid xs={1} md={3}>
 
-            </Grid>
-            <Grid xs={10} md={6}>
 
-                <FadeIn delay={1800} transitionDuration={1000}>
-                    <Text>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem corporis culpa,
-                        dignissimos distinctio earum est excepturi id illo incidunt ipsa maxime nesciunt nobis obcaecati
-                        optio, perspiciatis possimus quibusdam quisquam reprehenderit similique ut veniam voluptate.
-                    </Text>
-                </FadeIn>
+            {data.about.split("\n").map(el=>{
+                return <Grid.Container gap={0.8} justify='center'>
+                    <Grid xs={1} md={3}>
 
-            </Grid>
-            <Grid xs={1} md={3}> </Grid>
+                    </Grid>
+                    <Grid xs={10} md={6}>
+
+                        <FadeIn delay={1800} transitionDuration={1000}>
+
+                            <Text >{el.trim()} </Text>
+
+                        </FadeIn>
+
+
+
+                    </Grid>
+                    <Grid xs={1} md={3}> </Grid>
+
+                </Grid.Container>
+            })}
 
 
         </Grid.Container>
