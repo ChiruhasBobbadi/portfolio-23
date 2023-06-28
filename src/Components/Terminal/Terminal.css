@@ -1,0 +1,24 @@
+.close {
+    background-color: #fa615c;
+}
+
+.max {
+    background-color: #3fc950;
+}
+
+.min {
+    background-color: #ffbd48;
+}
+
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: #000;
+}
+
+.no-outline:focus {
+    outline: none;
+}

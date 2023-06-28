@@ -11,7 +11,7 @@ import Education from "./Components/Education";
 import Tech from "./Components/Tech";
 import Publications from "./Components/Publications";
 import Connect from "./Components/Connect";
-import Resume from "./Components/Resume";
+import Resume from "./Components/Resume/Resume";
 import Terminal from "./Components/Terminal/Terminal"
 import Error from "./Components/Error";
 
@@ -25,7 +25,7 @@ const theme = createTheme({
       primaryLightHover: '$green300',
       primaryLightActive: '$green400',
       primaryLightContrast: '$green600',
-      primary: '#4ADE7B',
+      primary: '#0072F5',
       primaryBorder: '$green500',
       primaryBorderHover: '$green600',
       primarySolidHover: '$green700',
@@ -44,6 +44,7 @@ const theme = createTheme({
     fonts: {}
   }
 })
+
 
 
 

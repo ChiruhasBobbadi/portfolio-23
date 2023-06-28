@@ -20,14 +20,7 @@ const Publications = () => {
                   weight="bold">
                 <TypeAnimation
                     // Same String at the start will only be typed once, initially
-                    sequence={[
-                        'My Publications.',
-                        1000,
-                        'My Published Literature.',
-                        2000
-
-
-                    ]}
+                    sequence={['My Publications.',1000]}
                     speed={50} // Custom Speed from 1-99 - Default Speed: 40
                     wrapper="span" // Animation will be rendered as a <span>
                     // Repeat this Animation Sequence infinitely
@@ -43,7 +36,7 @@ const Publications = () => {
 
                     </Grid>
                     <Grid xs={10} md={6}>
-                        <Link href={el.link} weight='bold' isExternal> <Text h2>{index + 1}{". "}{el.title}</Text>
+                        <Link href={el.link} weight='bold' isExternal target={"_blank"}> <Text h2>{index + 1}{". "}{el.title}</Text>
                         </Link>
                     </Grid>
                     <Grid xs={1} md={3}>

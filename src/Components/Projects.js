@@ -65,13 +65,10 @@ const Projects = ()=>{
                     </Grid>
                     <Grid xs={10} md={6}>
 
-                        <Link href={el.link} isExternal>
+                        <Link href={el.githubUrl} isExternal target={"_blank"}>
                             <Text h2  weight="bold">
-                                {index+1+".    "+el.title}
+                                {(index+1)+".    "+el.title}
                             </Text>
-
-
-
 
                         </Link>
 
@@ -152,7 +149,27 @@ const Projects = ()=>{
                 </Grid.Container>
             )}
 
+            <Grid.Container gap={1}>
+
+
+                <Grid xs={1} md={3}></Grid>
+                <Grid xs={10} md={6}><Text h2>& <Link href={data.githubUrl} isExternal>
+                    <Text h2 weight="bold" css={{
+                        textGradient: "45deg, $yellow600 -20%, $red600 100%",
+                    }}>
+                        More
+                    </Text>
+
+
+                </Link></Text></Grid>
+            </Grid.Container>
+
+
         </FadeIn>
+
+
+
+
 
 
 

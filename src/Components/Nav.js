@@ -87,12 +87,12 @@ const Nav = () => {
 
 
                 <Navbar.Link href="/" onClick={onLinkClick}>About</Navbar.Link>
-                <Navbar.Link href="/projects" onClick={onLinkClick}>Projects</Navbar.Link>
-                <Navbar.Link href="/education" onClick={onLinkClick}>Education</Navbar.Link>
-                <Navbar.Link href="/tech" onClick={onLinkClick}>Tech</Navbar.Link>
+                <Navbar.Link href="projects" onClick={onLinkClick}>Projects</Navbar.Link>
+                <Navbar.Link href="education" onClick={onLinkClick}>Education</Navbar.Link>
+                <Navbar.Link href="tech" onClick={onLinkClick}>Tech</Navbar.Link>
                 <Navbar.Link href="publications" onClick={onLinkClick}>Publications</Navbar.Link>
-                <Navbar.Link href="/resume" onClick={onLinkClick}>Résumé</Navbar.Link>
-                <Navbar.Link href="/connect" onClick={onLinkClick}>Connect</Navbar.Link>
+                <Navbar.Link href="resume" onClick={onLinkClick}>Résumé</Navbar.Link>
+                <Navbar.Link href="connect" onClick={onLinkClick}>Connect</Navbar.Link>
             </Navbar.Content>
 
             <Navbar.Collapse>

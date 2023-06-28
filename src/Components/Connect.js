@@ -48,8 +48,8 @@ const Connect = () => {
 
                         </Grid>
                         <Grid md={6} xs={10}>
-                            {element.name === 'E-mail' ? <Link href={mailto} isExternal><Text h2>E-mail </Text></Link> :
-                                <Link href={element.link} isExternal><Text h2>{element.name}</Text></Link>}
+                            {element.name === 'E-mail' ? <Link href={mailto} isExternal target={"_blank"}><Text h2>E-mail </Text></Link> :
+                                <Link href={element.link} isExternal target={"_blank"}><Text h2>{element.name}</Text></Link>}
                         </Grid>
                         <Grid md={3} xs={1}>
 
