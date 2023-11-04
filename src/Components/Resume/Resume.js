@@ -37,6 +37,9 @@ const Resume = ()=>{
 
 
     return <div>
+        <iframe src={url}
+                style={{display:"block",height:"100vh",width:"100vw" }}/>
+
 
         <VariantsSelectorWrapper>
             <Card css={{maxW: "50%"}}>
@@ -58,8 +61,7 @@ const Resume = ()=>{
                 </Card.Body>
             </Card>
         </VariantsSelectorWrapper>
-        <iframe src={url}
-                style={{display:"block",height:"100vh",width:"100vw" }}/>
+
     </div>
 
 

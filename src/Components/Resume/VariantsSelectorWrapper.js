@@ -4,7 +4,7 @@ export const VariantsSelectorWrapper = styled("div", {
     dflex: "center",
     position: "fixed",
     width: "100%",
-    bottom: "10px",
+    bottom: "5px",
     "& .nextui-radio-group-items": {
         display: "grid",
         gridTemplateColumns: "repeat(3, 1fr)",
