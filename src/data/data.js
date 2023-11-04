@@ -106,20 +106,20 @@ P.S.  I could tell you a joke about UDP but I don't know if you would get it.\n
     skills: [
         {
             name: 'Programming Languages',
-            skills: ['Java ❤️', 'JavaScript', 'Python','php', 'C/C++']
+            skills: ['Java ❤️', 'Kotlin', 'JavaScript', 'TypeScript', 'Go', 'Python', 'PHP', 'C/C++']
         },
         {
             name: 'Front End',
-            skills: ['HTML', 'CSS', 'BootStrap', 'Jquery', 'JavaScript', 'React.js']
+            skills: ['HTML', 'CSS', 'BootStrap', 'Jquery', 'JavaScript', 'React', 'Next.Js']
         },
         {
             name: 'Back End',
-            skills: ['Node.js', 'Django', 'Spring (learning)']
+            skills: ['Node.js', 'Django', 'Spring Boot', 'Go (Gin)']
         },
-        {name: 'Databases', skills: ['MongoDB', 'MySQL', 'DynamoDB', 'Firebase']},
+        {name: 'Databases', skills: ['MongoDB', 'MySQL', 'DynamoDB', 'Firebase', 'SQLite', 'Redis', 'PostgreSQL']},
         {
             name:'Others',
-            skills:['Version Control (Git)','Docker','REST (API design & principles)','GraphQL']
+            skills:['Version Control (Git)', 'Docker', 'RESTFul API\'s', 'gRPC', 'GraphQL', 'Problem Solving Skills']
         }
 
     ],
