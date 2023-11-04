@@ -27,6 +27,23 @@ P.S.  I could tell you a joke about UDP but I don't know if you would get it.\n
     ,
 
     projects: [
+
+        // {
+        //     title: 'Acme Fitness',
+        //     description: ['We developed an End-to-End HealthClub Membership Management system with a collaborative team approach and individual performance tracking. The system includes user-friendly interfaces for Members, Non-Members, and Admins, Users have the ability to ability to log workout’s, view progress & enroll in fitness classes. Subsequently admins have access to analytics dashboard which can be used to draw insights and make necessary decisions', 'The application also boasts robust APIs, and is deployed on an Auto Scaled EC2 Cluster with a Load Balancer for scalability and reliability.'],
+        //     techStack: ['reactjs', 'nodejs', 'mongodb'],
+        //     githubUrl: 'https://github.com/Acme-Fitness-Gym-Management-System',
+        //     current: false
+        // },
+
+        {
+            title: 'Acme Fitness',
+            description: ['We developed an End-to-End HealthClub Membership Management system with a collaborative team approach and individual performance tracking. The system includes user-friendly interfaces for Members, Non-Members, and Admins, Users have the ability to ability to log workout’s, view progress & enroll in fitness classes. Subsequently admins have access to analytics dashboard which can be used to draw insights and make necessary decisions', 'The application also boasts robust APIs, and is deployed on an Auto Scaled EC2 Cluster with a Load Balancer for scalability and reliability.'],
+            techStack: ['reactjs', 'nodejs', 'mongodb'],
+            githubUrl: 'https://github.com/Acme-Fitness-Gym-Management-System',
+            current: false
+        },
+
         {
             title: 'IoT Dashboard.',
             description: ['This application can be used by users to monitor all of their IoT devices in one place. Worked in collaboration with 4 members and created a dashboard that provides users with 4 features like the ability to manage devices, control & configure,monitor & tracking and billing.', 'Worked hands on with AWS IoT simulator to simulate diverse IoT clients.'],
