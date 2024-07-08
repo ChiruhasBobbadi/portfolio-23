@@ -6,17 +6,17 @@ const data = {
     linkedinUrl: "https://www.linkedin.com/in/chiruhas-bobbadi/",
     githubUrl: "https://github.com/ChiruhasBobbadi",
 
-    about:   `Hi, I am Chiruhas, i reside in San José California, I am currently a graduate student at San José State University, majoring in software engineering with a concentrated specialization in Enterprise Software Technologies. I am actively looking for a SDE Co-Op/ Full-Time Role. I am a highly motivated and enthusiastic individual with a passion for Software Development. With 4+ years experience in building application related to my coursework, side projects, & freelance work, I have developed a strong set of skills and knowledge in Software Development. Whether working independently or as part of a team, I approach every task with determination and a drive to deliver high-quality results.\n
+    about:   `
+    
+    Hi, I am Chiruhas, I reside in San José California, I recently graduated from San José State University, with a masters degree in software engineering with a concentrated specialization in Enterprise Software Technologies, currently I am actively looking for an Full-Time SDE Role.
 
-With a passion for problem-solving, I leverage a diverse skill set in programming languages and frameworks to address challenges. My fascination with system development and interactions led me to pursue a career in software engineering. Each technology I've learned adds a piece to a larger puzzle, providing a clear career direction, my ultimate  goal is to become an indispensable asset to any company I work for\n
+ About me, I am a highly motivated and enthusiastic individual with a passion for Software Development. Over the years, I have developed a strong set of skills and knowledge in Software Development. Whether working independently or as part of a team, I approach every task with determination and a drive to deliver high-quality results.
 
+With a passion for problem-solving, I leverage a diverse skill set in programming languages and frameworks to address challenges. My fascination with system development and interactions led me to pursue a career in software engineering. Each technology I've learned adds a piece to a larger puzzle, providing a clear career direction, my ultimate goal is to become an indispensable asset to the company I work for
 
-I use this website as a platform to showcase my skills and projects many of my projects are open source if you find any project interesting or want to collaborate on a project, I am open and you can connect me via any options listed on this site.\n
+I use this website as a platform to showcase my skills and projects, many of my projects are open source if you find any project interesting or want to collaborate on a project, I am open and you can connect me via any options listed on this site.
 
-In my downtime, I enjoy cooking, long drives, exercise, and Xbox gaming as means of recalibrating my inner-self. These are some of the most frequent things I do daily, and I do stick to a schedule so that I don't waste my time thinking about what to do. \n
-
-P.S.  I could tell you a joke about UDP but I don't know if you would get it.\n
-`
+In my downtime, I enjoy cooking, long drives, exercise, and Xbox gaming as a means of recalibrating my inner self. These are some of the most frequent things I do daily, and I do stick to a schedule so that I don't waste my time thinking about what to do.`
 
 
     ,
@@ -30,11 +30,22 @@ P.S.  I could tell you a joke about UDP but I don't know if you would get it.\n
         //     githubUrl: 'https://github.com/Acme-Fitness-Gym-Management-System',
         //     current: false
         // },
-
         {
-            title: 'Acme Fitness',
+            title: 'Applying Machine Learning and Crowdsourcing in Utility Management Services',
+            description: ['Conventional utility meters like the ones used in households for electricity bill generation are read manually by the distribution company\'s employee periodically - a strategy that is inefficient, error prone and time consuming.',
+
+
+                'Our Solution enables utility users to manage their utility consumption, by making it as simple as taking a picture of their utility meter, which is then processed by a machine learning model (YOLO v8) which is trained on meter image readings.',
+
+    'Still there might be cases where the model might not be able to detect the reading or give an incorrect reading this is where our proposed approach of "Crowd Sourcing" helps in making the model more effective by gathering feedback from the users which is then used to retrain the model.'],
+            techStack: ['Flutter', 'Spring Boot', 'Flask','MySQL','YOLOv8','crowd-sourcing'],
+            githubUrl: 'https://github.com/Smart-meter',
+            current: false
+        },
+        {
+            title: 'Health Club Management System',
             description: ['We developed an End-to-End HealthClub Membership Management system with a collaborative team approach and individual performance tracking. The system includes user-friendly interfaces for Members, Non-Members, and Admins, Users have the ability to ability to log workout’s, view progress & enroll in fitness classes. Subsequently admins have access to analytics dashboard which can be used to draw insights and make necessary decisions', 'The application also boasts robust APIs, and is deployed on an Auto Scaled EC2 Cluster with a Load Balancer for scalability and reliability.'],
-            techStack: ['reactjs', 'nodejs', 'mongodb'],
+            techStack: ['reactjs', 'golang', 'mongodb',],
             githubUrl: 'https://github.com/Acme-Fitness-Gym-Management-System',
             current: false
         },

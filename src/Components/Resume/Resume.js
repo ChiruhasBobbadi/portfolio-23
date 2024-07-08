@@ -8,13 +8,13 @@ const Resume = ()=>{
     /**
      *0th index => full stack
      * 1st => front end
-     * 2nd => backend
+     * 2nd => mobile
      */
-    const urls =["https://drive.google.com/file/d/1nceqXh_Rm4D_i2AlYaVdDXKFo_8Ge2xs/preview","https://drive.google.com/file/d/11OzPQfHnkH5q3nQQ7npu1iSE7LMQulOE/preview","https://drive.google.com/file/d/1GguJ8ddr01X8yDuHmvd6mL6ULEbbyN7f/preview"]
+    const urls =["https://drive.google.com/file/d/11QF9mZXyWDG6o7P46hR44R70JkvhkmM8/preview","https://drive.google.com/file/d/11QF9mZXyWDG6o7P46hR44R70JkvhkmM8/preview","https://drive.google.com/file/d/1m5Z2WG_ywOyjS8mWl6E8jiC7byWU_Goe/preview"]
 
     const [variant, setVariant] = useState("Web (Full Stack)");
 
-    const [url, setUrl ]= useState("https://drive.google.com/file/d/1nceqXh_Rm4D_i2AlYaVdDXKFo_8Ge2xs/preview")
+    const [url, setUrl ]= useState("https://drive.google.com/file/d/11QF9mZXyWDG6o7P46hR44R70JkvhkmM8/preview")
 
 
 
